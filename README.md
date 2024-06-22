@@ -5,8 +5,12 @@
 > # HOW TO RUN THE VIM FILE
 
 > # first change the permission to 777 of vim file 
-commond "**chomd 777 AwsResource.sh**"
+commond :
+
+    chomd 777 AwsResource.sh
 
 > After changing the permission run the vim file
 
-commond "**./AwsResource.sh**"
+commond :
+       
+    ./AwsResource.sh
