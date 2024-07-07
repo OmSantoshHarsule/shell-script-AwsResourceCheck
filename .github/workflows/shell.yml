@@ -1,0 +1,18 @@
+name: Run the script
+
+on: [push]
+
+jobs:
+  run-shellResource:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run a one-line script
+        run: echo Hello, world!
+        
+      - name: Run the script
+        run: |
+          echo Running the script .
+          ./shell_script/AwsResource.sh
