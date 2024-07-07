@@ -28,5 +28,3 @@ jobs:
             git add ./shell_script/AWS.txt
             git commit -m "Add/update Resource.txt"
             git push
-            env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
