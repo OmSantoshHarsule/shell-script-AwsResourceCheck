@@ -1,6 +1,8 @@
 name: Run the script
 
-on: [push]
+on:
+   schedule: 
+      - cron: '30 17 * * 0-5'
 
 jobs:
   run-shellResource:
