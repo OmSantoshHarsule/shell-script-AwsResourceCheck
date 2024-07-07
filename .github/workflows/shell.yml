@@ -17,3 +17,16 @@ jobs:
           echo Running the script .
           chmod 777  ./shell_script/AwsResource.sh
           ./shell_script/AwsResource.sh
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'OmSantoshHarsule'
+          git config --global user.email 'om.harsule.11@gmail.com'
+
+      - name: Commit and push changes
+        run: |
+            git add Resource.txt
+            git commit -m "Add/update Resource.txt"
+            git push
+            env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
