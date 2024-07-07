@@ -25,7 +25,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-            git add Resource.txt
+            git add ./shell_script/AWS.txt
             git commit -m "Add/update Resource.txt"
             git push
             env:
