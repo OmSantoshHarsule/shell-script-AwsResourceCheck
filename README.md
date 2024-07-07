@@ -14,3 +14,5 @@ commond :
 commond :
        
     ./AwsResource.sh
+
+    
