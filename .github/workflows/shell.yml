@@ -15,4 +15,5 @@ jobs:
       - name: Run the script
         run: |
           echo Running the script .
+          chmod 777  ./shell_script/AwsResource.sh
           ./shell_script/AwsResource.sh
