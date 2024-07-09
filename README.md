@@ -16,3 +16,4 @@ commond :
     ./AwsResource.sh
 
     
+[![Data passing workflow](https://github.com/OmSantoshHarsule/shell-script-AwsResourceCheck/actions/workflows/push.yml/badge.svg)](https://github.com/OmSantoshHarsule/shell-script-AwsResourceCheck/actions/workflows/push.yml)
