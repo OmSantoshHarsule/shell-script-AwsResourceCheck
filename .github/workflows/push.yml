@@ -18,7 +18,7 @@ jobs:
       - name: Download  data artifactor
         uses: actions/download-artifact@v2
         with:
-          name: data-artifact
+          name: data-artifac
           path: om/
       - name: use data in job2
         run: cat om/data.txt
