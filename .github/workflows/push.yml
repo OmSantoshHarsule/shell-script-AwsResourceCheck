@@ -18,6 +18,14 @@ jobs:
       with:
         name: data-artifact
         path: om.txt
+    - name: Generate data
+      run: echo "Vaishu" > vaishu.txt
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: data-vaishu
+        path: vaishu.txt
+    
         
   job2:
       needs: job1
@@ -32,5 +40,12 @@ jobs:
         run: cat om/data.txt
       - name: use data in job2
         run: cat om/om.txt
+      - name: Download  data artifactor
+        uses: actions/download-artifact@v2
+        with:
+          name: data-vaishu
+          path: om/
+      - name: use data in job2
+        run: cat om/vaishu.txt
       
         
