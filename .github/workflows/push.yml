@@ -11,6 +11,14 @@ jobs:
       with:
         name: data-artifact
         path: data.txt
+    - name: Generate data
+      run: echo "om" > om.txt
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: data-artifact
+        path: om.txt
+        
   job2:
       needs: job1
       runs-on: ubuntu-latest
@@ -18,7 +26,11 @@ jobs:
       - name: Download  data artifactor
         uses: actions/download-artifact@v2
         with:
-          name: data-artifac
+          name: data-artifact
           path: om/
       - name: use data in job2
         run: cat om/data.txt
+      - name: use data in job2
+        run: cat om/om.txt
+      
+        
