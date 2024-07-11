@@ -28,3 +28,8 @@ List of EC2 instance
  List of IAM user 
  List of S3 buckets 
  List of Lambda Function 
+Thu Jul 11 17:31:46 UTC 2024
+List of EC2 instance
+ List of IAM user 
+ List of S3 buckets 
+ List of Lambda Function 
