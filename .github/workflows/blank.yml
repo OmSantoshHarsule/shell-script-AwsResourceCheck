@@ -4,6 +4,8 @@ jobs:
   om:
      runs-on: ubuntu-latest
      steps:
+       - name: checkout the code
+         uses: checkout/actions@v4
        - name: print something
          run: echo "My name is Om" 
           
