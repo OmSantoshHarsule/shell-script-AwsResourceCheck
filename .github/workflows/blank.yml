@@ -5,7 +5,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: checkout the code
-         uses: checkout/actions@v4
+         uses: checkout/actions@v2
        - name: print something
          run: echo "My name is Om" 
           
