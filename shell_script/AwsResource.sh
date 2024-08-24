@@ -22,3 +22,6 @@ echo " List of Lambda Function " >> ./shell_script/AWS.txt
 aws lambda list-functions | jq '.Functions[].FunctionName' >> ./shell_script/AWS.txt
 aws lambda list-functions | jq '.Functions[].FunctionArn' >> ./shell_script/AWS.txt
 
+echo " List of S3 buckets " >> ./shell_script/AWS.txt
+aws s3 ls >> ./shell_script/AWS.txt
+
